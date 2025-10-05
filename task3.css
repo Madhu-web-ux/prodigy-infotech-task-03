@@ -1,0 +1,92 @@
+/* ===== Global ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* ===== Container ===== */
+.game-container {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 50px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 360px;
+}
+
+/* ===== Title ===== */
+.game-container h1 {
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: #1f2937;
+}
+
+/* ===== Board ===== */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cell {
+  background: #e2e8f0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #1f2937;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cell:hover {
+  background: #cbd5e1;
+  transform: scale(1.05);
+}
+
+/* ===== Status ===== */
+.status {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: #1f2937;
+}
+
+/* ===== Button ===== */
+.btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+.btn:hover {
+  background: #1e40af;
+  transform: scale(1.05);
+}
+/* X and O colors */
+.cell.x {
+  color: #2563eb; /* Deep Blue for X */
+}
+
+.cell.o {
+  color: #dc2626; /* Dark Red for O */
+}
